@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/css/desktop.min.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/mobile.min.css">
+  <link rel="stylesheet" href="/css/home-mobile.css">
+  <!-- External JS -->
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108713232-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-108713232-1');
+  </script>
+  <title>宾大中文戏剧社</title>
+</head>
+
+<body>
+
+  <!--
+      MARK: Navigation Buttons
+    -->
+
+
+
+  <div class="navigation-mb" id="alt-nav">
+    <div class="row mobile-hide">
+      <div class="col-7">
+        <a href="/home-ch">
+          <img src="/assets/images/logo.png" height="50px" />
+        </a>
+      </div>
+      <div class="col-5 right-txt">
+        <div class="right-txt" style="float:right;">
+          <div class="nav-custom-item right-txt">
+            <a href="/home">
+              <i class="icofont icofont-globe"></i>
+              English
+            </a>
+          </div>
+          <div class="nav-custom-item right-txt" id="alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            菜单
+          </div>
+          <div class="nav-custom-item right-txt register-item">
+            <a href="https://whartonchinasummit.ticketleap.com/2019/" target="_blank">
+              立即订票
+              <i class="icofont icofont-dotted-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mobile-only">
+      <div class="row height-100">
+        <div class="col-5">
+          <a href="/home-ch">
+            <img src="/assets/images/logo.png" height="40px" />
+          </a>
+        </div>
+        <div class="col-4 center-txt">
+          <a href="/home">
+            <i class="icofont icofont-globe"></i>
+            English
+          </a>
+        </div>
+        <div class="col-3 center-txt" id="m-alt-nav-btn">
+          <i class="icofont icofont-navigation-menu"></i>
+          菜单
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+      MARK:  Navigation Menu
+    -->
+  <div class="fixed-full" id="menu-container">
+    <div class="vertical-center mobile-hide">
+      <div class="row center-txt">
+        <div class="col-12">
+          <a href="/home-ch" target="_blank">
+            <div class="navigation-action-btn">立即购票</div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-12 row menu-items">
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="/home-ch"
+              class="active-item">剧社主页</a> <i class="icofont icofont-dotted-left"></i> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/play-ch">老妇还乡</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/past-ch">往届制作</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/theater-ch">观演指南</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about-ch">关于我们</a>
+          </div>
+        </div>
+      </div>
+      <div class="row center-txt">
+        <div class="col-3 offset-3 col-md-2 offset-md-1 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="https://www.facebook.com/PennChineseTheater/" target="_blank">
+              <i class="icofont icofont-social-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-3 col-md-3 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="/assets/images/wechat-code.jpg" target="_blank">
+              <i class="icofont icofont-social-wechat"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-3 offset-3 col-md-2 offset-md-0 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="https://www.youtube.com/channel/UCN2Shh-idZS8PCC8NRRBQqQ" target="_blank">
+              <i class="icofont icofont-social-youtube-play"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-3 col-md-3 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="https://space.bilibili.com/624056640" target="_blank">
+              <i class="icofont icofont-video"></i>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="col-4 col-md-2 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="http://www.instagram.com/pwcswhartonchina" target="_blank">
+              <i class="icofont icofont-social-instagram"></i>
+            </a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="verticl-center mobile-only">
+      <div class="row">
+        <div class="col-12 center-txt m-menu-title">
+          菜单
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-12 row menu-items center-txt">
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="/home-ch"
+              class="active-item">剧社主页</a> <i class="icofont icofont-dotted-left"></i> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/play-ch">老妇还乡</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/past-ch">往届制作</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/theater-ch">观演指南</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about-ch">关于我们</a>
+          </div>
+          <!-- <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="https://whartonchinasummit.ticketleap.com/2019/" target="_blank">立即订票</a> </div> -->
+        </div>
+      </div>
+      <div class="row hide" id="m-close-nav">
+        <div class="col-12 center-txt">
+          <div class="m-close-btn verticl-center">
+            <i class="icofont icofont-close"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+      MARK: Header
+    -->
+
+  <div class="section-full header" id="section-0">
+    <!-- <div class="left-square"></div> -->
+    <div class="sub-title">2021年11月13日<br />Irvine Auditorium</div>
+    <div class="vertical-sub-title mobile-hide">
+      戏剧是时代的综合而简练的历史记录者。
+    </div>
+    <h1 class="site-caption black-shadow">
+      宾夕法尼亚大学<br />中文戏剧社
+    </h1>
+    <div class="bottom-square">
+      <div class="row">
+        <div class="book-bg col-10 white-txt ls-1" style="letter-spacing: 3px;">立即订票</div>
+        <div class="col-2 white-bg action-area">
+          <a href="https://whartonchinasummit.ticketleap.com/2019/" target="_blank" class="black-txt"><i
+              class="icofont icofont-dotted-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+      MARK: Section 1 - Landing Section
+    -->
+
+  <div class="section-full-mobile-half row" id="section-1">
+    <!-- LEFT: -->
+    <div class="col-12 col-md-6 section-1-left mobile-hide">
+      <!-- Desktop Verison -->
+      <div class="section-1-left-middle-content mobile-hide">
+        <h2 class="caller-h2">一份灯光下的热情澎湃</h2>
+        <h2 class="caller-h2">一段戏剧中的悲喜忧愁</h2>
+        <h2 class="caller-h2">一片舞台</h2>
+        <h2 class="caller-h2">一群有趣的灵魂相聚于此</h2>
+      </div>
+      <!-- Mobile Version -->
+      <div class="section-1-left-middle-content mobile-only">
+        <div class="row">
+          <div class="col-6 right-txt">
+            <h2 class="caller-h2">一份灯光下的热情澎湃</h2>
+            <h2 class="caller-h2">一段戏剧中的悲喜忧愁</h2>
+            <h2 class="caller-h2">一片舞台</h2>
+            <h2 class="caller-h2">一群有趣的灵魂相聚于此</h2>
+          </div>
+          <div class="col-6 left-border-line left-txt">
+            <img class="logo-img" src="../assets/images/logo.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- RIGHT: -->
+    <div class="col-12 col-md-6 section-1-right">
+      <div class="section-1-right-middle-content">
+        <strong>
+          <h5 class="caller-h5">宾大中文戏剧社2021年秋季制作</h5>
+          <div class="theme">《老妇还乡》</div>
+        </strong><br /><br />
+      </div>
+      <img class="section-1-city-img" src="/assets/images/shanghai.jpeg">
+    </div>
+  </div>
+
+
+  <div class="section-title overflow-hide" id="speaker-section-title">
+    <div class="row height-100">
+      <div class="col-12">
+        <div class="vertical-center center-txt">
+          <div class="speakers-section-caption"><span class="crimson-txt"></span>往届制作</div>
+          <div class="speakers-section-subcaption">​回顾那些欢笑与泪水</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+    MARK: Speakers Section
+  -->
+  <div class="overflow-hide" id="section-2">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-6 col-md-4 center-txt speaker-item">
+              <img class="speaker-img" src="/assets/images/等待戈多.jpg" />
+              <div class="speaker-name">《等待戈多》</div>
+              <div class="speaker-title">2021春季</div>
+            </div>
+            <div class="col-6 col-md-4 center-txt speaker-item">
+              <img class="speaker-img" src="/assets/images/咖啡未冷前.png" />
+              <div class="speaker-name">《咖啡未冷前》</div>
+              <div class="speaker-title">2020秋季</div>
+            </div>
+            <div class="col-6 col-md-4 center-txt speaker-item">
+              <img id="Tiankai" class="speaker-img" src="/assets/images/宝岛一村.jpg" />
+              <div class="speaker-name">《宝岛一村》</div>
+              <div class="speaker-title">2019秋季</div>
+            </div>
+            <div class="col-6 col-md-4 center-txt speaker-item">
+              <img class="speaker-img" src="/assets/images/风声.jpg" />
+              <div class="speaker-name">《风声》</div>
+              <div class="speaker-title">2019春季</div>
+            </div>
+            <div class="col-6 col-md-4 center-txt speaker-item">
+              <img class="speaker-img" src="/assets/images/暗恋桃花源.jpg" />
+              <div class="speaker-name">​《暗恋桃花源》</div>
+              <div class="speaker-title">2018秋季</div>
+            </div>
+            <div class="col-6 col-md-4 center-txt speaker-item">
+              <img id="Tiankai" class="speaker-img" src="/assets/images/乌龙山伯爵.jpg" />
+              <div class="speaker-name">《乌龙山伯爵》</div>
+              <div class="speaker-title">2018春季</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-action" id="speakers-section-action">
+    <a href="/panels-ch">
+      <div class="section-action-btn">
+        更多往届制作 <i class="icofont icofont-simple-right"></i>
+      </div>
+    </a>
+  </div>
+
+
+
+  <div class="section-banner" id="section-sponsor">
+    <div class="row ">
+      <div class="col-10 offset-1 center-txt">
+        <div class="sponsor-caption">我们的合作伙伴</div>
+      </div>
+    </div>
+    <div class="row height-70">
+      <div class="col-3 col-md-2 offset-md-1 center-txt">
+        <img class="vertical-center" src="/assets/images/pac.jpg" width="80%">
+      </div>
+      <div class="col-3 col-md-2 offset-md-1 center-txt">
+        <img class="vertical-center" src="/assets/images/pac.jpg" width="80%">
+      </div>
+      <div class="col-3 col-md-2 offset-md-1 center-txt">
+        <div class="dotted-box vertical-center">
+          <div class="vertical-center">
+            <a href="../assets/images/wechat-code.jpg" target="_blank">
+              ... 加入我们! ...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="section-banner overflow-hide" id="section-contact">
+    <div class="row height-100">
+      <div class="col-12 col-md-6">
+        <div class="row height-80 height-70-mobile">
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="https://www.facebook.com/PennChineseTheater/" target="_blank">
+                <i class="icofont icofont-social-facebook"></i><br />
+                <span class="txt-4-icon">脸书</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="/assets/images/wechat-code.jpg" target="_blank">
+                <i class="icofont icofont-social-wechat"></i><br />
+                <span class="txt-4-icon">微信<span class="mobile-hide">公众号</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="https://www.youtube.com/channel/UCN2Shh-idZS8PCC8NRRBQqQ" target="_blank">
+                <i class="icofont icofont-social-youtube-play"></i><br />
+                <span class="txt-4-icon">Youtube<span class="mobile-hide">视频</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="https://space.bilibili.com/624056640" target="_blank">
+                <i class="icofont icofont-video"></i><br />
+                <span class="txt-4-icon">B站<span class="mobile-hide">视频</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row height-20">
+          <div class="col-12 center-txt contact-caption">
+            <div>宾夕法尼亚大学 · Irvine Auditorium · 2021.11.13</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mobile-hide">
+        <div class="row height-100">
+          <div class="col-12 no-padding">
+            <div id='map' style='width: 110%; height: 110%;'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--
+      MARK: Page End
+    *******************
+    -->
+
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../js/global-ch.js"></script>
+  <script src="../js/home-ch.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/dark-v9',
+      center: [-75.17, 39.9429105],
+      zoom: 9,
+      zoomControl: false,
+      scrollZoom: false,
+      interactive: false
+    });
+    $('.carousel').carousel();
+  </script>
+</body>
+
+</html>
