@@ -12,25 +12,22 @@
   }
 
   .header {
-    background: url("../assets/images/bg-theater.jpg");
+    background: url("/assets/images/bg-theater.jpg");
     background-position: right top;
     background-size: cover;
   }
   
   
   #section-1 {
-    background-color: crimson;
-    height: 50%;
+    background-color: #333;
   }
-
+  
   .section-1-left {
     background-color: white;
-    height: 50%;
   }
-
+  
   .section-1-right {
-    background-color: crimson;
-    height: 100%;
+    background-color: #333;
   }
 
   .caller-h2 {
@@ -144,35 +141,34 @@
   ============== */
 
   .speaker-img {
-    border: 5px solid #EFE9E1;
-    box-shadow: -10px 20px crimson;
-    margin-top: 0px;
+    border: 10px solid #EFE9E1;
+    box-shadow: -10px 40px #333;
+    margin-top: 30px;
     width: 100%;
     max-width: 240px;
     height: auto;
   }
-
+  
   .speaker-name {
     width: 100%;
     max-width: 240px;
     text-align: left;
     color: white;
     font-family: avn-demi, pf-heavy, pf-medium;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 40px;
     margin: auto;
     letter-spacing: 1px;
   }
-
+  
   .speaker-title {
     width: 100%;
     max-width: 240px;
     text-align: left;
-    line-height: 15px;
-    font-size: 12px;
+    line-height: 25px;
+    font-size: 15px;
     margin: auto;
     letter-spacing: 1px;
-    margin-bottom: 20px;
   }
 
   .speaker-item {
