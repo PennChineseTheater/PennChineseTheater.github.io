@@ -10,10 +10,9 @@ Section 1 CSS
 }
 
 .header {
-  background: url("../assets/images/bg.jpg");
+  background: url("/assets/images/bg-theater.jpg");
   background-position: right top;
   background-size: cover;
-  background-color: black;
 }
 
 .book-bg {

@@ -30,9 +30,10 @@
     padding: 10%;
   }
   .header {
-    background: url("../assets/images/mobile-bg-past.jpg");
+    background: url("/assets/images/bg.jpg");
     background-position: right top;
     background-size: cover;
+    background-color: black;
   }
   .my-icon-next{
     content: url("../assets/images/next-icon.png") !IMPORTANT;

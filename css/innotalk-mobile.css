@@ -29,7 +29,8 @@
   padding: 10%;
 }
 .header {
-  background: url("../assets/images/mobile-bg-innotalk.jpg");
+  background: url("../assets/images/the-visit.jpg");
+  background: grayscale(100%);
   background-position: right top;
   background-size: cover;
 }

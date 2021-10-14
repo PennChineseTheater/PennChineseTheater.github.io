@@ -61,14 +61,15 @@
 }
 
 .header {
-  background: url("../assets/images/bg-past.jpg");
+  background: url("/assets/images/bg.jpg");
   background-position: right top;
   background-size: cover;
+  background-color: black;
 }
 
 .year-title {
   font-family: avn-demi, pf-heavy, pf-medium;
-  font-size: 50px;
+  font-size: 35px;
 }
 .slogan-title {
   font-family: avn-regular, pf-regular;
@@ -152,4 +153,35 @@
   font-size: 50px;
   letter-spacing: 3px;
   margin-bottom: 30px;
+}
+
+
+/*
+================
+SECTION Contact
+================
+*/
+
+#section-contact {
+  background-color: #343332;
+  color: #E6E6E6;
+}
+
+.contact-icon {
+  font-size: 50px;
+  color: #E6E6E6;
+  line-height: 30px;
+}
+
+.contact-caption {
+  font-family: avn-ultra, pf-light;
+  letter-spacing:2px;
+}
+
+.txt-4-icon {
+  font-size: 15px;
+}
+
+#jump-txt {
+  letter-spacing: 3px;
 }

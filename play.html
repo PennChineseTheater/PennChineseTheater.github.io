@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../css/desktop.min.css">
+  <link rel="stylesheet" href="../css/innotalk.css">
+  <link rel="stylesheet" href="../css/mobile.min.css">
+  <link rel="stylesheet" href="../css/innotalk-mobile.css">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-128.png" sizes="128x128" />
+  <!-- External JS -->
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108713232-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-108713232-1');
+  </script>
+  <title>老妇还乡 | 宾大中文戏剧社</title>
+</head>
+
+<body>
+
+  <!--
+      MARK: Navigation Buttons
+    -->
+
+  <div class="navigation-mb" id="alt-nav">
+    <div class="row mobile-hide">
+      <div class="col-7">
+        <a href="/index.html">
+          <img src="/assets/images/logo.png" height="50px" />
+        </a>
+      </div>
+      <div class="col-5 right-txt">
+        <div class="right-txt" style="float:right;">
+          <div class="nav-custom-item right-txt">
+            <a href="/home">
+              <i class="icofont icofont-globe"></i>
+              English
+            </a>
+          </div>
+          <div class="nav-custom-item right-txt" id="alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            菜单
+          </div>
+          <div class="nav-custom-item right-txt register-item">
+            <a href="https://whartonchinasummit.ticketleap.com/2019/" target="_blank">
+              立即订票
+              <i class="icofont icofont-dotted-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mobile-only">
+      <div class="row height-100">
+        <div class="col-5">
+          <a href="/index.html">
+            <img src="/assets/images/logo.png" height="40px" />
+          </a>
+        </div>
+        <div class="col-4 center-txt">
+          <a href="/home">
+            <i class="icofont icofont-globe"></i>
+            English
+          </a>
+        </div>
+        <div class="col-3 center-txt" id="m-alt-nav-btn">
+          <i class="icofont icofont-navigation-menu"></i>
+          菜单
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+          MARK:  Navigation Menu
+        -->
+  <div class="fixed-full" id="menu-container">
+    <div class="vertical-center mobile-hide">
+      <div class="row center-txt">
+        <div class="col-12">
+          <a href="/index.html" target="_blank">
+            <div class="navigation-action-btn">立即购票</div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-12 row menu-items">
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/index.html">剧社主页</a>
+
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-3"> <a
+              href="/play.html" class="active-item">老妇还乡</a><i class="icofont icofont-dotted-left"></i>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/past.html">往届制作</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a
+              href="/theater.html">观演指南</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about.html">关于我们</a>
+          </div>
+        </div>
+      </div>
+      <div class="row center-txt">
+        <div class="col-3 offset-3 col-md-2 offset-md-1 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="https://www.facebook.com/PennChineseTheater/" target="_blank">
+              <i class="icofont icofont-social-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-3 col-md-3 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="/assets/images/wechat-code.jpg" target="_blank">
+              <i class="icofont icofont-social-wechat"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-3 offset-3 col-md-2 offset-md-0 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="https://www.youtube.com/channel/UCN2Shh-idZS8PCC8NRRBQqQ" target="_blank">
+              <i class="icofont icofont-social-youtube-play"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-3 col-md-3 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="https://space.bilibili.com/624056640" target="_blank">
+              <i class="icofont icofont-video"></i>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="col-4 col-md-2 center-txt">
+              <div class="nav-social-item center-txt">
+                <a href="http://www.instagram.com/pwcswhartonchina" target="_blank">
+                  <i class="icofont icofont-social-instagram"></i>
+                </a>
+              </div>
+            </div> -->
+      </div>
+    </div>
+    <div class="verticl-center mobile-only">
+      <div class="row">
+        <div class="col-12 center-txt m-menu-title">
+          菜单
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-12 row menu-items center-txt">
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/index.html">剧社主页</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-3"> <a
+              href="/play.html" class="active-item">老妇还乡</a><i class="icofont icofont-dotted-left"></i>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item " id="item-1"> <a href="/past.html">往届制作</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a
+              href="/theater.html">观演指南</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about.html">关于我们</a>
+          </div>
+          <!-- <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="https://whartonchinasummit.ticketleap.com/2019/" target="_blank">立即订票</a> </div> -->
+        </div>
+      </div>
+      <div class="row hide" id="m-close-nav">
+        <div class="col-12 center-txt">
+          <div class="m-close-btn verticl-center">
+            <i class="icofont icofont-close"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="section-full header" id="section-0">
+    <div class="left-square"></div>
+    <div class="sub-title">2021年11月13日<br />Irvine Auditorium</div>
+    <div class="vertical-sub-title mobile-hide">
+      戏剧是时代的综合而简练的历史记录者。
+    </div>
+    <div class="black-shadow">
+      <h1 class="page-caption"> 2021秋季制作<br /> 《老妇还乡》</h1>
+    </div>
+    <div class="bottom-square">
+      <div class="row">
+        <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">立即购票</div>
+        <div class="col-2 white-bg action-area">
+          <a href="https://whartonchinasummit.ticketleap.com" target="_blank" class="black-txt"><i
+              class="icofont icofont-dotted-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MARK: TRACY! -->
+
+
+
+
+  <div class="white-bg" id="whitebox">
+    <!-- <h2 class="title">
+      <center> Win <u>40K</u> Dollars Cash Awards!! </center>
+    </h2>
+    <div class="section-action" id="more-section-action">
+      <a href="https://innotalk2020.typeform.com/to/fcuMRg">
+        <div class="section-action-btn">
+          Apply for Innotalk <i class="icofont icofont-simple-right"></i>
+        </div>
+      </a>
+    </div> -->
+
+    <div class="row">
+      <div class="col-lg-3 col-sm-12">
+        <img src="/assets/images/the-visit-logo.png" width="100%">
+      </div>
+      <div class="col-lg-8 col-sm-12">
+        <div class="row">
+          <div class="play-summary">
+            <p> <strong>四十多年前，</strong>一个未婚先孕的少女在众人冷漠的注视中踏上了离乡的列车，在一个陌生的城市里沦为娼妓；<br>
+
+              <strong>四十多年后，</strong>一个穿金戴银的老妇在众人热情的欢呼中回到了故土居伦城，却用一张巨额支票，将这座小城变成了追逐金钱利益的人间炼狱。<br><br>
+
+              金钱是万能的。它能让白的变成黑的，诱惑着少年郎背叛自己青梅竹马的爱人；它也能让黑的变成白的，引导着人们将买凶杀人说成是伸张正义，是主持公道，是为了良心。<br>
+
+              休要嘲讽剧中人的贪婪，休要用仁义道德遮掩你的野心。只消问你一句：当十亿支票摆在你的面前，你到底是收，还是不收？
+            </p>
+          </div>
+
+        </div>
+        <br><br>
+      </div>
+
+    </div>
+
+    <!-- <div class="row">
+      <div class="col-lg-12 col-sm-12 col-xs-12">
+        <center>
+          <h2 id="whycome">WHY InnoTalk?</h2>
+        </center>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- Why Innotalk Start -->
+
+  <!-- <div class="row no-gutters white-bg row-eq-height">
+    <div class="col-lg-6 col-sm-12 col-xs-12 crimson-bg flex">
+      <div id="redbox">
+        <div class="row">
+          <div class="strip">
+            <img src="../assets/images/black.png">
+          </div>
+        </div>
+
+        <div class="row reason">
+          <div class="col-lg-2 col-sm-2 col-xs-2 number">01</div>
+          <div class="col-lg-10 col-sm-10 col-xs-10 text">
+            <p class="white-paragraph"> <br /> Cash Benefits: </p>
+            <h4 class="white-paragraph">40K Dollars Cash Awards!! </p>
+          </div>
+        </div>
+        <div class="row mid-pos">
+          <div class="strip">
+            <img src="../assets/images/black.png">
+          </div>
+        </div>
+        <div class="row mid-rs reason">
+          <div class="col-lg-2 col-sm-2 col-xs-2 number">02</div>
+          <div class="col-lg-10 col-sm-10 col-xs-10 text">
+            <p class="white-paragraph">四十多年前，一个未婚先孕的少女在众人冷漠的注视中踏上了离乡的列车，在一个陌生的城市里沦为娼妓；
+
+              四十多年后，一个穿金戴银的老妇在众人热情的欢呼中回到了故土居伦城，却用一张巨额支票，将这座小城变成了追逐金钱利益的人间炼狱。
+
+              金钱是万能的。它能让白的变成黑的，诱惑着少年郎背叛自己青梅竹马的爱人；它也能让黑的变成白的，引导着人们将买凶杀人说成是伸张正义，是主持公道，是为了良心。
+
+              休要嘲讽剧中人的贪婪，休要用仁义道德遮掩你的野心。只消问你一句：当十亿支票摆在你的面前，你到底是收，还是不收？</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-lg-6 col-sm-12 col-xs-12 black-bg flex">
+      <div id="blackbox">
+        <div class="row">
+          <div class="strip">
+            <img src="../assets/images/red.png">
+          </div>
+        </div>
+
+        <div class="row reason">
+          <div class="col-lg-2 col-sm-2 col-xs-2 number">03</div>
+          <div class="col-lg-10 col-sm-10 col-xs-10 text">
+            <p class="white-txt"> 弗里德里希·迪伦马特（Friedrich
+              Dürrenmatt，1921-1990），瑞士德语剧作家、小说家。他年轻时在苏黎世和伯尔尼学习文学、神学和哲学。毕业后，他在苏黎世担任戏剧编辑。1946年，他搬到巴塞尔，开始了职业作家的生涯。
+
+              迪伦马特是一位有艺术抱负和创新精神的作家。他的作品以“怪诞”的风格著称，又深刻地反映了当时各种严重的社会问题。1940到60年代之间，迪伦马特创作了《罗慕洛斯大帝》（1948）、《老妇还乡》（1956）、《物理学家》（1962）以及其他誉满世界戏剧界的杰作。他获得了德国曼海姆颁发的席勒奖（1959）、瑞士伯尔尼颁发的文学大奖（1979），以及奥地利国家欧洲文学奖（1984）等诸多奖项。作为20世纪最受尊敬的作家之一，他的许多作品被编入德语国家的课程材料中。
+
+            </p>
+          </div>
+        </div>
+        <div class="row mid-pos">
+          <div class="strip">
+            <img src="../assets/images/red.png">
+          </div>
+        </div>
+        <div class="row mid-rs reason">
+          <div class="col-lg-2 col-sm-2 col-xs-2 number">04</div>
+          <div class="col-lg-10 col-sm-10 col-xs-10 text">
+            <p class="white-txt"> For each of the top three teams,
+              PWCS will make a business brochure and
+              send it to selected Penn alumni and other top venture capital investors.
+            </p>
+          </div>
+        </div>
+        <div class="row last-pos">
+          <div class="strip">
+            <img src="../assets/images/red.png">
+          </div>
+        </div>
+        <div class="row last-rs reason">
+          <div class="col-lg-2 col-sm-2 col-xs-2 number">05</div>
+          <div class="col-lg-10 col-sm-10 col-xs-10 text">
+            <p class="white-txt"><br> Great exposure through all PWCS and InnoTalk media posts. </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <div class="section-banner overflow-hide" id="section-contact">
+    <div class="row height-100">
+      <div class="col-12 col-md-6">
+        <div class="row height-80 height-70-mobile">
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="https://www.facebook.com/PennChineseTheater/" target="_blank">
+                <i class="icofont icofont-social-facebook"></i><br />
+                <span class="txt-4-icon">脸书</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="/assets/images/wechat-code.jpg" target="_blank">
+                <i class="icofont icofont-social-wechat"></i><br />
+                <span class="txt-4-icon">微信<span class="mobile-hide">公众号</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="https://www.youtube.com/channel/UCN2Shh-idZS8PCC8NRRBQqQ" target="_blank">
+                <i class="icofont icofont-social-youtube-play"></i><br />
+                <span class="txt-4-icon">Youtube<span class="mobile-hide">视频</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="https://space.bilibili.com/624056640" target="_blank">
+                <i class="icofont icofont-video"></i><br />
+                <span class="txt-4-icon">B站<span class="mobile-hide">视频</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row height-20">
+          <div class="col-12 center-txt contact-caption">
+            <div>宾夕法尼亚大学 · Irvine Auditorium · 2021.11.13</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mobile-hide">
+        <div class="row height-100">
+          <div class="col-12 no-padding">
+            <div id='map' style='width: 110%; height: 110%;'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!--
+      MARK: Page End
+    *******************
+    -->
+
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../js/global.js"></script>
+  <script src="../js/home.js"></script>
+  <script src="../js/about.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/dark-v9',
+      center: [-75.17, 39.9429105],
+      zoom: 9,
+      zoomControl: false,
+      scrollZoom: false,
+      interactive: false
+    });
+    $('.carousel').carousel();
+  </script>
+</body>
+
+</html>

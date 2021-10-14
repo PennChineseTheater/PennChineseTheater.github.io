@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../css/desktop.min.css">
+  <link rel="stylesheet" href="../css/past.css">
+  <link rel="stylesheet" href="../css/mobile.min.css">
+  <link rel="stylesheet" href="../css/past-mobile.css">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="../assets/favicons/favicon-128.png" sizes="128x128" />
+  <!-- External JS -->
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108713232-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-108713232-1');
+  </script>
+  <title>往届制作 | 宾大中文戏剧社</title>
+</head>
+
+<body>
+
+  <!--
+      MARK: Navigation Buttons
+    -->
+  <div class="navigation-mb" id="alt-nav">
+    <div class="row mobile-hide">
+      <div class="col-7">
+        <a href="/index.html">
+          <img src="/assets/images/logo.png" height="50px" />
+        </a>
+      </div>
+      <div class="col-5 right-txt">
+        <div class="right-txt" style="float:right;">
+          <div class="nav-custom-item right-txt">
+            <a href="/home">
+              <i class="icofont icofont-globe"></i>
+              English
+            </a>
+          </div>
+          <div class="nav-custom-item right-txt" id="alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            菜单
+          </div>
+          <div class="nav-custom-item right-txt register-item">
+            <a href="https://whartonchinasummit.ticketleap.com/2019/" target="_blank">
+              立即订票
+              <i class="icofont icofont-dotted-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mobile-only">
+      <div class="row height-100">
+        <div class="col-5">
+          <a href="/index.html">
+            <img src="/assets/images/logo.png" height="40px" />
+          </a>
+        </div>
+        <div class="col-4 center-txt">
+          <a href="/home">
+            <i class="icofont icofont-globe"></i>
+            English
+          </a>
+        </div>
+        <div class="col-3 center-txt" id="m-alt-nav-btn">
+          <i class="icofont icofont-navigation-menu"></i>
+          菜单
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+        MARK:  Navigation Menu
+      -->
+  <div class="fixed-full" id="menu-container">
+    <div class="vertical-center mobile-hide">
+      <div class="row center-txt">
+        <div class="col-12">
+          <a href="/index.html" target="_blank">
+            <div class="navigation-action-btn">立即购票</div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-12 row menu-items">
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/index.html">剧社主页</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/play.html">老妇还乡</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-1"> <a
+              href="/past.html" class="active-item">往届制作</a><i class="icofont icofont-dotted-left"></i>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a
+              href="/theater.html">观演指南</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about.html">关于我们</a>
+          </div>
+        </div>
+      </div>
+      <div class="row center-txt">
+        <div class="col-3 offset-3 col-md-2 offset-md-1 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="https://www.facebook.com/PennChineseTheater/" target="_blank">
+              <i class="icofont icofont-social-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-3 col-md-3 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="/assets/images/wechat-code.jpg" target="_blank">
+              <i class="icofont icofont-social-wechat"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-3 offset-3 col-md-2 offset-md-0 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="https://www.youtube.com/channel/UCN2Shh-idZS8PCC8NRRBQqQ" target="_blank">
+              <i class="icofont icofont-social-youtube-play"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-3 col-md-3 center-txt">
+          <div class="nav-social-item center-txt">
+            <a href="https://space.bilibili.com/624056640" target="_blank">
+              <i class="icofont icofont-video"></i>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="http://www.instagram.com/pwcswhartonchina" target="_blank">
+                <i class="icofont icofont-social-instagram"></i>
+              </a>
+            </div>
+          </div> -->
+      </div>
+    </div>
+    <div class="verticl-center mobile-only">
+      <div class="row">
+        <div class="col-12 center-txt m-menu-title">
+          菜单
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-12 row menu-items center-txt">
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/index.html">剧社主页</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/play.html">老妇还乡</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-1"> <a
+              href="/past.html" class="active-item">往届制作</a> <i class="icofont icofont-dotted-left"></i>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a
+              href="/theater.html">观演指南</a>
+          </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about.html">关于我们</a>
+          </div>
+          <!-- <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="https://whartonchinasummit.ticketleap.com/2019/" target="_blank">立即订票</a> </div> -->
+        </div>
+      </div>
+      <div class="row hide" id="m-close-nav">
+        <div class="col-12 center-txt">
+          <div class="m-close-btn verticl-center">
+            <i class="icofont icofont-close"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+      MARK: Header
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a></div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="./past.html">Past</a> <i class="icofont icofont-dotted-left"></i> </div>
+
+    -->
+
+  <div class="section-full header" id="section-0">
+    <div class="left-square"></div>
+    <div class="sub-title">2021年11月13日<br />Irvine Auditorium</div>
+    <div class="vertical-sub-title mobile-hide">
+      戏剧是时代的综合而简练的历史记录者。
+    </div>
+    <div class="black-shadow">
+      <h1 class="page-caption">往届 <br /> 制作</h1>
+    </div>
+    <div class="bottom-square">
+      <div class="row">
+        <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">立即购票</div>
+        <div class="col-2 white-bg action-area">
+          <a href="index.html" target="_blank" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+      MARK: content
+    -->
+
+  <!-- MARK: TRACY! -->
+
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2019秋季</h2>
+        <h2 class="slogan-title">
+          <span>《宝岛一村》</span>
+        </h2>
+        <img src="/assets/images/宝岛一村.jpg" width="70%">
+
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          PCT迎来社团史上最大制作，演职人员达到六十人，吸引近400名观众，并将赖声川的又一经典剧目带上舞台。
+          三个半小时的演出中，绵延六十余年的历史和生活交错着在舞台上呈现，将眷村三个普通家庭的悲欢离合，移民命运的跌宕起伏交给每一位观众去消化。
+          现场观众多用“悲喜交集，感人至深”等字眼来形容这场演出。同年十二月，执委会决定将《宝岛一村》全面升级，推向更为宽广的公众舞台。
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2019春季</h2>
+        <h2 class="slogan-title">
+          <span>《风声》</span>
+        </h2>
+        <img src="/assets/images/风声.jpg" width="70%">
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          “吴金李顾四，你们谁是匪？”《风声》是自PCT成立起完成的第一部真正意义上的悬疑戏剧。
+          在现今大时代的背景下，这一题材下已经少有能贯穿历史事件的剧目。PCT的《风声》讲述了1941年日寇统治下杭州的日伪情报间谍事件。
+          在三个小时的十幕里，挑战了迄今为止最为跌宕起伏、心惊胆跳的制作。“老鬼”是谁可能并不重要，因为PCT已经再次刷新了历史。
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2018秋季</h2>
+        <h2 class="slogan-title">
+          <span>《暗恋桃花源》</span>
+        </h2>
+        <img src="/assets/images/暗恋桃花源.jpg" width="70%">
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          赖氏招牌大戏，精彩已经无需多言。这是PCT第一次尝试台湾知名编剧赖声川笑泪交集、亦悲亦喜、
+          但却又极具讽刺和反思性意义的创意风格，PCT的两位大二导演摒弃传统的排练方式和指导思想，
+          引入大量新生演员，完成了这部令人赞不绝口的翻版佳作。当场灯亮起时，满地细碎的桃花和朦胧的天光又一次将全场带进了梦中的桃花源。
+          《暗恋桃花源》是PCT 尝试大型布景和制作的第一步，也为接下来几部更高水准的表演打实了基础。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2018春季</h2>
+        <h2 class="slogan-title">
+          <span>《乌龙山伯爵》</span>
+        </h2>
+        <img src="/assets/images/乌龙山伯爵.jpg" width="70%">
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          PCT首次尝试开心麻花喜剧，并回归International House演出。剧社也迎来一批新鲜血液：
+          当一群初登舞台的新生代演员遇上久经历练的老戏骨，一场充满活力与激情的爆笑大戏就此诞生。
+          “三无”青年，银行总裁，劫匪，探长，各色看似不相关的人物之间却发生了令人捧腹的喜剧冲突，
+          包袱横飞，惊喜连连。此次演出PCT还首次邀请了30余位宾大校友回校看演出，其中包括了PCT初代创始人们。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2017秋季</h2>
+        <h2 class="slogan-title">
+          <span>《空中花园谋杀案》</span>
+        </h2>
+        <!-- <img src="/assets/images/风声.jpg" width="70%"> -->
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          剧社成立五周年之际，PCT首次实验音乐悬疑剧，并第一次于Annenberg Center for the Performing Arts演出。
+          全部近三百余张演出票在演出前一周就宣告售罄。同时，剧社迎来第五代导演及筹委团队，演职人员达到近四十人。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2017春季</h2>
+        <h2 class="slogan-title">
+          <span>《未完待续》</span>
+        </h2>
+        <!-- <img src="/assets/images/风声.jpg" width="70%"> -->
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          PCT首次尝试实验性黑箱剧。五位演员不仅要在两个小时的时间里，在舞台上完成对于生命意义的探讨，
+          还要每个人同时扮演十余个不同的角色，包括小学生，售票员，保镖，明星，电线杆，甚至公园里的天鹅。
+          由于没有完整版的剧本，导演秦硕琛亲自发挥想象，将几千字的“骨架”拓展为一场令人捧腹又感人肺腑的盛宴。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2016秋季</h2>
+        <h2 class="slogan-title">
+          <span>《你好疯子》</span>
+        </h2>
+        <!-- <img src="/assets/images/风声.jpg" width="70%"> -->
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          宾大《你好打劫》的续集。PCT重回爆笑荒诞喜剧路径，并成功吸引超过350余名观众。丰富的演员团队包括了天普大学本科生，
+          宾大本科生，研究生，博士生，博士后和陪读家属。扮演“疯子”的演员们曾在排练时因为过于投入招致了学校保安的检查。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2016春季</h2>
+        <h2 class="slogan-title">
+          <span>《我和我和他和他》</span>
+        </h2>
+        <!-- <img src="/assets/images/风声.jpg" width="70%"> -->
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          PCT 向内心求索和探寻的一部戏。“对于过去的看似陌生的自己，我们应该选择接纳还是拒绝？
+          如何面对过去与现在判若两人的他？” 六个人组成的演出团队，也是PCT有史以来最精巧的一个。
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2015秋季</h2>
+        <h2 class="slogan-title">
+          <span>《驴得水》</span>
+        </h2>
+        <!-- <img src="/assets/images/风声.jpg" width="70%"> -->
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          一部大背景设定在中国农村，黑色幽默为皮，残酷讽刺为骨的荒诞喜剧。PCT迎来第三代导演和筹委团队。
+          在试图总结这场令人又哭又笑的制作时，PCT的文案是“既悲又喜的不是喜剧，不是悲剧，甚至不是荒诞剧。既悲又喜，就是生活”。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2015春季</h2>
+        <h2 class="slogan-title">
+          <span>《无人生还》</span>
+        </h2>
+        <!-- <img src="/assets/images/风声.jpg" width="70%"> -->
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          由阿加莎小说改编后的宾大版无人生还，是剧社对悬疑舞台剧的首次尝试。
+          与此同时，剧社再次迁回International House主场演出，这也是PCT很多第一代创始人在宾大的最后一场演出。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2014秋季</h2>
+        <h2 class="slogan-title">
+          <span>《金大班的最后一夜》</span>
+        </h2>
+        <!-- <img src="/assets/images/风声.jpg" width="70%"> -->
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          PCT 再次挑战以民国时代为背景的剧本，讲述百乐门舞女金大班的凄美故事。宣发广告中写道：“人生选择许多，亦只是过错太多，错过太多。这个故事有关爱，无关爱情。”
+          “女孩子的话就别来看戏了。会超多损伤的。”
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2014春季</h2>
+        <h2 class="slogan-title">
+          <span>《你好打劫》</span>
+        </h2>
+        <!-- <img src="/assets/images/风声.jpg" width="70%"> -->
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          PCT从International House剧场转至宾大博物馆演出。剧社首次尝试饶晓志的黑色幽默喜剧，并接触更为深刻的社会话题。同时，以李泽宇为首的第二代剧社成员开始接过剧社的指挥棒。<br>
+          谈到PCT和这部剧，作为创始人之一的孙启炜面对海华都市报记者说，“一个人的理想国，大约是空想。大家的理想国，才可能成为乌托邦。”
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2013秋季</h2>
+        <h2 class="slogan-title">
+          <span>《红玫瑰与白玫瑰》</span>
+        </h2>
+        <!-- <img src="/assets/images/风声.jpg" width="70%"> -->
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          PCT扩充至25名社员，将白月光和朱砂痣的故事搬上舞台。<br>
+          “也许每一个男子全都有过这样的两个女人，至少两个。”
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-bg" id="whitebox">
+    <div class="row row-eq-height">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h2 class="year-title">​2013春季</h2>
+        <h2 class="slogan-title">
+          <span>​《失恋33天》​</span>
+        </h2>
+        <!-- <img src="/assets/images/风声.jpg" width="70%"> -->
+      </div>
+      <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+        <p>
+          2013年，宾大中文戏剧社成立，以一个关于爱情的作品作为首秀。<br> “无论你受过多少伤，总有一个人会让你再次相信爱情，哪怕是最后一次。”
+        </p>
+      </div>
+    </div>
+    <br><br>
+  </div>
+
+  <div class="section-banner overflow-hide" id="section-contact">
+    <div class="row height-100">
+      <div class="col-12 col-md-6">
+        <div class="row height-80 height-70-mobile">
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="https://www.facebook.com/PennChineseTheater/" target="_blank">
+                <i class="icofont icofont-social-facebook"></i><br />
+                <span class="txt-4-icon">脸书</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="/assets/images/wechat-code.jpg" target="_blank">
+                <i class="icofont icofont-social-wechat"></i><br />
+                <span class="txt-4-icon">微信<span class="mobile-hide">公众号</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="https://www.youtube.com/channel/UCN2Shh-idZS8PCC8NRRBQqQ" target="_blank">
+                <i class="icofont icofont-social-youtube-play"></i><br />
+                <span class="txt-4-icon">Youtube<span class="mobile-hide">视频</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3 center-txt">
+            <div class="vertical-center contact-icon">
+              <a href="https://space.bilibili.com/624056640" target="_blank">
+                <i class="icofont icofont-video"></i><br />
+                <span class="txt-4-icon">B站<span class="mobile-hide">视频</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row height-20">
+          <div class="col-12 center-txt contact-caption">
+            <div>宾夕法尼亚大学 · Irvine Auditorium · 2021.11.13</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mobile-hide">
+        <div class="row height-100">
+          <div class="col-12 no-padding">
+            <div id='map' style='width: 110%; height: 110%;'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!--
+      MARK: Page End
+    *******************
+    -->
+
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../js/global.js"></script>
+  <script src="../js/home.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/dark-v9',
+      center: [-75.1982673, 39.9529105],
+      zoom: 9
+    });
+    $('.carousel').carousel();
+  </script>
+</body>
+
+</html>

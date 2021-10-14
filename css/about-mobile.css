@@ -11,7 +11,7 @@
   right: 5px;
 }
 #question{
-  color: red;
+  color: #941a1d;
   padding-bottom: 30px;
 }
 #whycome{
@@ -21,7 +21,7 @@
   font-size: 80px;
 }
 #redbox{
-  background-color: crimson;
+  background-color: #941a1d;
   padding: 10%;
 }
 #blackbox{
@@ -29,7 +29,7 @@
   padding: 10%;
 }
 .header {
-  background: url("../assets/images/mobile-bg-about.jpg");
+  background: url("../assets/images/bg-about.png");
   background-position: right top;
   background-size: cover;
 }
